@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    --white:#fdfdfd;
+    --blue:#1e90ff;
+    --black:#000000;
+    --grey:#383838;
+    
+    color:var(--white);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+/* General Placement */
+body{
+    background-color: var(--black);
+    background-image: url("./79B1F535-36B4-4A26-BDBA-643B7E7B3D22.jpeg");
+}
+
+Header{
+    display: flex;
+    background-color: var(--grey);
+}
+
+/* ....................RIGHT HEADER............................ */
+
+
+#nav-icon1 span{
+    display: block;
+    background-color: white;
+    margin:12px;
+    height: 6px;
+    width:60px;
+    border-radius: 2px;
+  }
+
+#nav-menu1:checked ~ #nav-icon1 span:nth-child(1){
+    transform: rotate(135deg) translate(21px,-13px)
+}
+
+#nav-menu1:checked ~ #nav-icon1 span:nth-child(2){
+    opacity: 0;
+}
+
+
+#nav-menu1:checked ~ #nav-icon1 span:nth-child(3){
+    transform: rotate(-135) translate(3px);
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+#nav-icon1 span{
+    cursor: pointer;
+    transition: .25s ease-in-out;
+}
+
+#nav-icon1 span{
+    cursor: pointer;
+    transition: .25s ease-in-out;
+}
+
+#nav-icon1 span{
+
+}
+.dropDown{
+    display: none;
+}
+
+
+
+/* ........................................................... */
+
+.currentAlbum{
+    position: relative;
+}
+.main-img{
+  
+    
+}
+
+/* i{
+    font-size: 2rem;
+} */
