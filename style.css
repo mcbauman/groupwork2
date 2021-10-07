@@ -12,8 +12,9 @@
 }
 /* General Placement */
 body{
-    background-color: var(--black);
-    background-image: url("./79B1F535-36B4-4A26-BDBA-643B7E7B3D22.jpeg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2),black,  black), url("./cover1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 Header{
@@ -104,3 +105,80 @@ input[type="checkbox"]{
 /* i{
     font-size: 2rem;
 } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.links{
+    display: grid;
+    grid-template-areas: 
+    "left middle right";
+}
+.linksLeft{
+    grid-area: left;
+}
+.linksMiddle{
+    grid-area: middle;
+}
+.linksRight{
+    grid-area: right;
+}
+li{
+    list-style-type: none;
+}
+.linksSmaller{
+    font-size: 1rem;;
+}
+
+
+
+
+
+
+
+input{
+    background-color: black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.trackList table{
+    width: 100%;
+
+}
+.tableSmaller{
+    font-size: 1rem;
+}
