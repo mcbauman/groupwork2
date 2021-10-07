@@ -106,33 +106,49 @@ input[type="checkbox"]{
     font-size: 2rem;
 } */
 
+.others{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.album1{
+    background-image: url("./cover2.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+.album2{
+    background-image: url("./cover3.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+.album3{
+    background-image: url("./cover4.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+.album4{
+    background-image: url("./cover5.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+.album5{
+    background-image: url("./cover6.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
 
+.album6{
+    background-image: url("./cover7.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.main
 
 .links{
     display: grid;
