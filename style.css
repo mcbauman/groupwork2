@@ -19,19 +19,33 @@ body{
 Header{
     display: flex;
     background-color: var(--grey);
+    justify-content: space-between;
+
 }
 
-/* ....................RIGHT HEADER............................ */
+
+
+/* ....................RIGHT HEADER..................... */
+
+.rightHeader{
+    display: flex;
+    flex-direction: column;
+
+}  
+
+.hiddenHeader{
+    display: none;
+}
 
 
 #nav-icon1 span{
     display: block;
     background-color: white;
-    margin:12px;
-    height: 6px;
-    width:60px;
+    margin:10px;
+    height: 4px;
+    width:40px;
     border-radius: 2px;
-  }
+}
 
 #nav-menu1:checked ~ #nav-icon1 span:nth-child(1){
     transform: rotate(135deg) translate(21px,-13px)
@@ -43,7 +57,8 @@ Header{
 
 
 #nav-menu1:checked ~ #nav-icon1 span:nth-child(3){
-    transform: rotate(-135) translate(3px);
+    transform: rotate(-135deg) translate(3px);
+    top:-7px;
 }
 
 input[type="checkbox"]{
@@ -54,17 +69,25 @@ input[type="checkbox"]{
     transition: .25s ease-in-out;
 }
 
-#nav-icon1 span{
-    cursor: pointer;
-    transition: .25s ease-in-out;
-}
 
 #nav-icon1 span{
+    position:relative;
+    left:0;
 
 }
+
+#nav-menu1:checked ~ #nav-icon1 span:nth-child(2){
+    opacity: 0;
+    left: -60px;
+
+}
+
+
+
+
 .dropDown{
     display: none;
-}
+} 
 
 
 
