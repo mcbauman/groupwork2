@@ -12,14 +12,14 @@
 }
 /* General Placement */
 body{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.2),black,  black), url("./cover1.jpg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),black,  black, black, black), url("./cover1.jpg");
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 Header{
     display: flex;
-    background-color: var(--grey);
+    background-color: rgba(0, 0, 0, 0.7);
     justify-content: space-between;
 
 }
@@ -80,9 +80,7 @@ input[type="checkbox"]{
 #nav-menu1:checked ~ #nav-icon1 span:nth-child(2){
     opacity: 0;
     left: -60px;
-
 }
-
 
 
 
@@ -93,6 +91,15 @@ input[type="checkbox"]{
 
 
 /* ........................................................... */
+.picture{
+    display: flex;
+    justify-content: center;
+}
+.picture img{
+    width: 900px;
+    margin-top: 100px;
+    
+}
 
 .currentAlbum{
     position: relative;
@@ -148,8 +155,6 @@ input[type="checkbox"]{
     height: 400px;
 }
 
-.main
-
 .links{
     display: grid;
     grid-template-areas: 
@@ -168,7 +173,7 @@ li{
     list-style-type: none;
 }
 .linksSmaller{
-    font-size: 1rem;;
+    font-size: 1rem;
 }
 
 
