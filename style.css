@@ -12,13 +12,14 @@
 }
 /* General Placement */
 body{
-    background-color: var(--black);
-    background-image: url("./79B1F535-36B4-4A26-BDBA-643B7E7B3D22.jpeg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),black,  black, black, black), url("./cover1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 Header{
     display: flex;
-    background-color: var(--grey);
+    background-color: rgba(0, 0, 0, 0.7);
     justify-content: space-between;
 
 }
@@ -79,9 +80,7 @@ input[type="checkbox"]{
 #nav-menu1:checked ~ #nav-icon1 span:nth-child(2){
     opacity: 0;
     left: -60px;
-
 }
-
 
 
 
@@ -92,6 +91,15 @@ input[type="checkbox"]{
 
 
 /* ........................................................... */
+.picture{
+    display: flex;
+    justify-content: center;
+}
+.picture img{
+    width: 900px;
+    margin-top: 100px;
+    
+}
 
 .currentAlbum{
     position: relative;
@@ -104,3 +112,94 @@ input[type="checkbox"]{
 /* i{
     font-size: 2rem;
 } */
+
+.others{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.album1{
+    background-image: url("./cover2.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+.album2{
+    background-image: url("./cover3.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+.album3{
+    background-image: url("./cover4.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+.album4{
+    background-image: url("./cover5.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+.album5{
+    background-image: url("./cover6.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+
+.album6{
+    background-image: url("./cover7.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+
+.links{
+    display: grid;
+    grid-template-areas: 
+    "left middle right";
+}
+.linksLeft{
+    grid-area: left;
+}
+.linksMiddle{
+    grid-area: middle;
+}
+.linksRight{
+    grid-area: right;
+}
+li{
+    list-style-type: none;
+}
+.linksSmaller{
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+input{
+    background-color: black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.trackList table{
+    width: 100%;
+
+}
+.tableSmaller{
+    font-size: 1rem;
+}
